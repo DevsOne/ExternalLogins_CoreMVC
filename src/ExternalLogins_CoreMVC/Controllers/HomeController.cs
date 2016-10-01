@@ -165,7 +165,6 @@ namespace ExternalLogins_CoreMVC.Controllers
 
                 string userid = info.Principal.Claims.FirstOrDefault(c => c.Type == "urn:twitter:userid").Value;
                 string screenname = info.Principal.Claims.FirstOrDefault(c => c.Type == "urn:twitter:screenname").Value;
-
             }
             #region GitHub
             else if (provider == "GitHub")

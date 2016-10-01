@@ -140,6 +140,21 @@ namespace ExternalLogins_CoreMVC
             //};
             //app.UseTwitterAuthentication(twitterOptions);
 
+
+
+            //var twitterOptions = new OAuthOptions()
+            //{
+            //    AuthenticationScheme = "Twitter",
+            //    ClientId = Configuration["Twitter:ConsumerKey"],
+            //    ClientSecret = Configuration["Twitter:ConsumerSecret"],
+            //    CallbackPath = new PathString("/signin-twitter"),
+            //    BackchannelHttpHandler = CreateHandler(),
+            //    SignInScheme = "Authenticated",
+            //    AuthorizationEndpoint = "https://api.twitter.com/oauth/authorize",
+            //    TokenEndpoint = "https://api.twitter.com/oauth/access_token",
+            //};
+            //app.UseOAuthAuthentication(twitterOptions);
+
             #endregion Twitter
 
 
@@ -190,18 +205,7 @@ namespace ExternalLogins_CoreMVC
 
             #endregion LinkedIn
 
-            //var twitterOptions = new OAuthOptions()
-            //{
-            //    AuthenticationScheme = "Twitter",
-            //    ClientId = Configuration["Twitter:ConsumerKey"],
-            //    ClientSecret = Configuration["Twitter:ConsumerSecret"],
-            //    CallbackPath = new PathString("/signin-twitter"),
-            //    BackchannelHttpHandler = CreateHandler(),
-            //    SignInScheme = "Authenticated",
-            //    AuthorizationEndpoint = "https://api.twitter.com/oauth/authorize",
-            //    TokenEndpoint = "https://api.twitter.com/oauth/access_token",
-            //};
-            //app.UseOAuthAuthentication(twitterOptions);
+            
 
             app.UseMvc(routes =>
             {
