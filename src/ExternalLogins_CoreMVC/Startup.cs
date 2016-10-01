@@ -203,7 +203,6 @@ namespace ExternalLogins_CoreMVC
             //    SignInScheme = "Authenticated",
             //    AuthorizationEndpoint = "https://api.twitter.com/oauth/authorize",
             //    TokenEndpoint = "https://api.twitter.com/oauth/access_token",
-            //    UserInformationEndpoint = "https://api.twitter.com/oauth/request_token"
             //};
             //app.UseOAuthAuthentication(twitterOptions);
 
