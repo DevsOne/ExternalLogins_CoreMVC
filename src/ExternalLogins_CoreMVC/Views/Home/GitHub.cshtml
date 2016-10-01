@@ -1,0 +1,226 @@
+﻿@model ExternalLogins_CoreMVC.Models.GitHubViewModel
+
+<br />
+<div class="form-horizontal">
+    <p style="text-align:center;" class="text-info">
+        You've successfully authenticated with <i><strong>@ViewBag.LoginProvider</strong></i>.<br />
+        Please fill out the form below and click the Register button to finish
+        logging in.
+    </p>
+
+    <div class="form-group">
+        <label asp-for="AvatarUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <img src="@Model.AvatarUrl" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Id" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Id" value="@Model.Id" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Name" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Name" value="@Model.Name" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Email" value="@Model.Email" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Followers" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Followers" value="@Model.Followers" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Following" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Following" value="@Model.Following" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CreatedAt" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="CreatedAt" value="@Model.CreatedAt" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UpdatedAt" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="UpdatedAt" value="@Model.UpdatedAt" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SiteAdmin" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="SiteAdmin" value="@Model.SiteAdmin" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Login" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Login" value="@Model.Login" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FollowersUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="FollowersUrl" value="@Model.FollowersUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FollowingUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="FollowingUrl" value="@Model.FollowingUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EventsUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="EventsUrl" value="@Model.EventsUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GistsUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="GistsUrl" value="@Model.GistsUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HtmlUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="HtmlUrl" value="@Model.HtmlUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="OrganizationsUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="OrganizationsUrl" value="@Model.OrganizationsUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ReceivedEventsUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="ReceivedEventsUrl" value="@Model.ReceivedEventsUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ReposUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="ReposUrl" value="@Model.ReposUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SubscriptionsUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="SubscriptionsUrl" value="@Model.SubscriptionsUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Url" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Url" value="@Model.Url" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StarredUrl" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="StarredUrl" value="@Model.StarredUrl" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Type" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Type" value="@Model.Type" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PublicRepos" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="PublicRepos" value="@Model.PublicRepos" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PublicGists" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="PublicGists" value="@Model.PublicGists" readonly />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Bio" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Bio" value="@Model.Bio" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GravatarId" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="GravatarId" value="@Model.GravatarId" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Company" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Company" value="@Model.Company" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Blog" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Blog" value="@Model.Blog" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Location" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Location" value="@Model.Location" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Hireable" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input type="text" asp-for="Hireable" value="@Model.Hireable" readonly style="text-transform: capitalize;" />
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Register" />
+            </div>
+        </div>*@
+</div>
