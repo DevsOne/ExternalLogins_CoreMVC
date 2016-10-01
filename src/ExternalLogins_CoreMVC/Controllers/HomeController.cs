@@ -25,8 +25,7 @@ namespace ExternalLogins_CoreMVC.Controllers
             return View();
         }
 
-
-        private const string RequestTokenEndpoint = "https://api.twitter.com/oauth/request_token";
+        
         [HttpPost]
         public async void ExternalLogin(string provider, string returnUrl = null)
         {
