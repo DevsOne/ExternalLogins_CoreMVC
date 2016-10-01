@@ -53,7 +53,6 @@ namespace ExternalLogins_CoreMVC
             app.UseStaticFiles();
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
-                AuthenticationScheme = "Cookies",
                 AutomaticAuthenticate = true,
                 AutomaticChallenge = true,
             });
@@ -120,10 +119,8 @@ namespace ExternalLogins_CoreMVC
 
             //var twitterOptions = new TwitterOptions()
             //{
-            //    AuthenticationScheme = "Twitter",
             //    ConsumerKey = Configuration["Twitter:ConsumerKey"],
             //    ConsumerSecret = Configuration["Twitter:ConsumerSecret"],
-            //    SignInScheme = "Cookies",
             //    //Events = new TwitterEvents
             //    //{
             //    //    OnCreatingTicket = async context =>
